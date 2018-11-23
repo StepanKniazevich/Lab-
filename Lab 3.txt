@@ -33,7 +33,7 @@ public:
 	}}
 
 	void showTime(){
-	cout<<"Ïîòî÷íèé ÷àñ :  " ; normal(hours);cout<<hours <<":";normal(minutes); cout<<minutes<<":";normal(seconds); cout<<seconds<<endl;  
+	cout<<"ÐŸÐ¾Ñ‚Ð¾Ñ‡Ð½Ð¸Ð¹ Ñ‡Ð°Ñ :  " ; normal(hours);cout<<hours <<":";normal(minutes); cout<<minutes<<":";normal(seconds); cout<<seconds<<endl;  
 	
 	}
 
@@ -45,7 +45,7 @@ min_s=minutes+min_s;
  if (min_s>60){min_s-=60; hour_s++;}
 hour_s=hours+hour_s;
 if(hour_s>24){hour_s-=24;day++;  }
-cout<<"Ðåçóëüòàò äîäàâàííÿ   :   " <<day <<" Äåíü  " ; normal(hour_s);  cout<<hour_s <<":";normal(min_s); cout<<min_s<<":";normal(sec_s); cout<<sec_s<<endl;  
+cout<<"Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚ Ð´Ð¾Ð´Ð°Ð²Ð°Ð½Ð½Ñ   :   " <<day <<" Ð”ÐµÐ½ÑŒ  " ; normal(hour_s);  cout<<hour_s <<":";normal(min_s); cout<<min_s<<":";normal(sec_s); cout<<sec_s<<endl;  
 }
 	
 	
@@ -60,11 +60,11 @@ int main (){
 
 
 
-cout<<"Ââåäiòü ïîòî÷íèé ÷àñ "<<endl<<"Ãîäèíà : ";
+cout<<"Ð’Ð²ÐµÐ´iÑ‚ÑŒ Ð¿Ð¾Ñ‚Ð¾Ñ‡Ð½Ð¸Ð¹ Ñ‡Ð°Ñ "<<endl<<"Ð“Ð¾Ð´Ð¸Ð½Ð° : ";
 	cin>>hour;
-	cout<<"Õâèëèíà : ";
+	cout<<"Ð¥Ð²Ð¸Ð»Ð¸Ð½Ð° : ";
 	cin>>min;
-	cout<<"Ñåêóíäà : ";
+	cout<<"Ð¡ÐµÐºÑƒÐ½Ð´Ð° : ";
 	cin>>sec;
 
 
@@ -73,11 +73,11 @@ Time Now(hour,min,sec);
 
 Now.showTime();
 
-cout<<endl<<"Ââåäiòü  ÷àñ, ÿêèé ïîòð³áíî äîäàòè äî ïîòî÷íîãî  "<<endl<<"Ãîäèíà : ";//Äîðîáèòè ïåðåâ³ðêó íà ïðàâèëüí³ñòü, âèâÎÄÈÒÈ ÷àñ ÿêèé ïîòð³áíî äîäàòè 
+cout<<endl<<"Ð’Ð²ÐµÐ´iÑ‚ÑŒ  Ñ‡Ð°Ñ, ÑÐºÐ¸Ð¹ Ð¿Ð¾Ñ‚Ñ€Ñ–Ð±Ð½Ð¾ Ð´Ð¾Ð´Ð°Ñ‚Ð¸ Ð´Ð¾ Ð¿Ð¾Ñ‚Ð¾Ñ‡Ð½Ð¾Ð³Ð¾  "<<endl<<"Ð“Ð¾Ð´Ð¸Ð½Ð° : ";
 	cin>>hour_s;
-	cout<<"Õâèëèíà : ";
+	cout<<"Ð¥Ð²Ð¸Ð»Ð¸Ð½Ð° : ";
 	cin>>min_s;
-	cout<<"Ñåêóíäà : ";
+	cout<<"Ð¡ÐµÐºÑƒÐ½Ð´Ð° : ";
 	cin>>sec_s;
 	 
 	Now.summaTime(hour_s,  min_s,sec_s);
