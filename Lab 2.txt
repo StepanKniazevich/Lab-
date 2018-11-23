@@ -38,7 +38,7 @@ int main (){
  int a,b;
 
 Rectangl ABCD;
-cout<<"Ââåäiòü çíà÷åííÿ  äîâæèíè ³ øèðèíè ïðÿìîêóòíèêà (â³ä 0 äî 20) "<<endl;
+cout<<"Ð’Ð²ÐµÐ´iÑ‚ÑŒ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð½Ñ  Ð´Ð¾Ð²Ð¶Ð¸Ð½Ð¸ Ñ– ÑˆÐ¸Ñ€Ð¸Ð½Ð¸ Ð¿Ñ€ÑÐ¼Ð¾ÐºÑƒÑ‚Ð½Ð¸ÐºÐ° (Ð²Ñ–Ð´ 0 Ð´Ð¾ 20) "<<endl;
 cin>>a;
 cin>>b;
 
@@ -46,10 +46,10 @@ if((a>0)&(b>0)&(a<20)&(b<20)){
 
 ABCD.Set_length(a);
 ABCD.Set_width(b);
-cout<<"Ïðÿìîêóòíèê ðîçì³ðîì  : "<<ABCD.Get_length()<<" x "<<ABCD.Get_widht()<<endl;
-cout<<"Ïëîùà = "<<ABCD.square()<<endl;
-cout<<"Ïåðèìåòð = "<<ABCD.perimeter()<<endl;}
-else { cout<<"Âè ââåëè íåïðàâèëüí³ çíà÷åííÿ "<<endl; }	
+cout<<"ÐŸÑ€ÑÐ¼Ð¾ÐºÑƒÑ‚Ð½Ð¸Ðº Ñ€Ð¾Ð·Ð¼Ñ–Ñ€Ð¾Ð¼  : "<<ABCD.Get_length()<<" x "<<ABCD.Get_widht()<<endl;
+cout<<"ÐŸÐ»Ð¾Ñ‰Ð° = "<<ABCD.square()<<endl;
+cout<<"ÐŸÐµÑ€Ð¸Ð¼ÐµÑ‚Ñ€ = "<<ABCD.perimeter()<<endl;}
+else { cout<<"Ð’Ð¸ Ð²Ð²ÐµÐ»Ð¸ Ð½ÐµÐ¿Ñ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ñ– Ð·Ð½Ð°Ñ‡ÐµÐ½Ð½Ñ "<<endl; }	
 
 system("pause");
 return 0;}
